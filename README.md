@@ -13,7 +13,7 @@ This project aims to classify news articles as **"Real"** or **"Fake"** using ma
 Each approach is contained in its own notebook, allowing direct comparison of their effectiveness.
 
 ## Dataset
-The dataset used is **`news_articles.csv`**, sourced from [Kaggle](https://www.kaggle.com/datasets/ruchi798/source-based-news-classification).
+The dataset used is [`news_articles.csv`](news_articles.csv), sourced from [Kaggle](https://www.kaggle.com/datasets/ruchi798/source-based-news-classification).
 
 We focus primarily on the following columns:
 
@@ -26,7 +26,7 @@ We focus primarily on the following columns:
 ## Methodology & Modeling Approaches
 
 ### Approach 1: Random Forest with Feature Engineering
-**File:** `fakenewsrf.ipynb`  
+**File:** [`fakenewsrf.ipynb`](fakenewsrf.ipynb)  
 
 This baseline model combines classic NLP with engineered features.  
 
@@ -38,7 +38,7 @@ This baseline model combines classic NLP with engineered features.
 - **Model** → `RandomForestClassifier` trained on combined TF-IDF + features.  
 
 ### Approach 2: LightGBM Classifier
-**File:** `fakenewslgbm.ipynb`  
+**File:** [`fakenewslgbm.ipynb`](fakenewslgbm.ipynb)  
 
 A more powerful model replacing Random Forest with LightGBM.  
 
@@ -48,7 +48,7 @@ A more powerful model replacing Random Forest with LightGBM.
   - Provides improved accuracy and efficiency.  
 
 ### Approach 3: DistilBERT Transformer
-**File:** `fakenewstf.ipynb`  
+**File:** [`fakenewstf.ipynb`](fakenewstf.ipynb)  
 
 The most advanced approach, using a pre-trained Transformer model.  
 
@@ -91,12 +91,5 @@ pip install transformers torch datasets
 * **LightGBM** → Faster and more accurate than Random Forest.
 * **DistilBERT** → Best results due to contextual language understanding, but requires more compute.
 
-This iterative approach illustrates the **trade-offs** between:
-
-* Model complexity
-* Feature engineering effort
-* Computational cost
-* Predictive accuracy
-
-Do you also want me to **generate the actual three Python/Notebook scripts (`fakenewsrf.ipynb`, `fakenewslgbm.ipynb`, `fakenewstf.ipynb`)** so you can run them directly with this dataset?
-```
+## Author
+Om Prakash Behera

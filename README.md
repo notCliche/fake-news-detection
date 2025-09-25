@@ -80,7 +80,6 @@ pip install transformers torch datasets
    * Accuracy, precision, recall, F1-score.
    * Confusion matrix plots.
    * Predictions saved in CSV:
-
      * `prediction_results.csv`
      * `prediction_results_lgbm.csv`
      * `prediction_results_transformer.csv`
